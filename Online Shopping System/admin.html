@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Application - Admin Login</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <center>
+        <h1 id="heading"><label>Online Shopping Application</label></h1>
+    </center>
+
+    <div id="container">
+        <div id="Main1">
+            <center>
+                <h2>Welcome to Admin Login </h2>
+                <input type="submit" value="Login" id="loginb">
+            </center>
+        </div>
+
+        <div id="Main2">
+            <a class="A blue-button" href="">Manage Products</a><br>
+            <a class="A blue-button" href="">Manage Users</a><br>
+            <a class="A blue-button" href="">View Orders</a><br>
+            <a class="A blue-button" href="">View Reviews</a><br>
+            <a class="A blue-button" href="">Manage Offers</a><br>
+        </div>
+    </div>
+
+    <section id="login1" style="display: none;">
+        <div id="space">
+            <div class="login-container">
+                <h1>Admin Login</h1>
+                <form action="" method="get">
+                    <label for="Username">Username</label>
+                    <input type="text" id="Username" name="username" placeholder="Enter Username" required><br><br>
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" name="password" placeholder="Enter password" required><br><br>
+                    <input type="submit" value="Login" class="login-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("loginb").addEventListener("click", function() {
+            document.getElementById("login1").style.display = "block";
+        });
+    </script>
+</body>
+</html>

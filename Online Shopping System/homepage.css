@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(27, 140, 207, 0.8); /* Use rgba for transparency */
+    color: white; /* Adjust text color as needed */
+    padding: 15px;
+   
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 1;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+   
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(27, 140, 207, 0.8); /* Use rgba for transparency */
+}
+
+.option {
+    padding: 10px;
+    color: white; /* Adjust text color as needed */
+    text-decoration: none;
+    display: block;
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the hover background color and transparency */
+}
+
+
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.menu-options {
+    display: none;
+    
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 60px; /* Adjust for the fixed navbar */
+    padding: 20px;
+}
+
+#homeimage{
+   /* border: red solid; */
+   height: 27rem;
+  
+}
+
+img{
+    height: 27rem;
+    width: 50rem;
+    /* box-shadow: 10px 10px 10px 10px;
+    color: #1b8acf; */
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-options {
+        display: block;
+    }
+
+    .option {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+
+
+/* for card slide */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Add styles for navigation buttons or indicators if needed */
+.carousel-container{
+    height: 50%;
+    width: 50%;
+}  
+
+

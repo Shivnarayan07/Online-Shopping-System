@@ -1,0 +1,154 @@
+#container {
+    background-color: rgb(15, 139, 164);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding to the container */
+}
+
+h1 {
+    height: 60px;
+    flex-basis: 100%; /* Take up the full width of the container initially */
+}
+
+#Main1 {
+    margin-top: 20px;
+    flex-basis: 100%; /* Take up the full width of the container initially */
+}
+
+#loginb {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(1, 0, 2);
+    background-color: white;
+    border: 2px green solid; 
+    margin-top: 20px;
+    border-radius: 10px;   
+}
+
+#loginb:hover {
+    background-color: rgb(105, 212, 139);
+}
+
+#Main2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.A {
+    margin-right: 20px;
+    font: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#heading {
+    padding-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(183, 83, 21, 0);   
+}
+
+label {
+    color: rgb(2, 2, 1);
+    box-shadow: 20px 20px 20px rgba(44, 44, 55, 0.8);
+}
+
+body, h1, h2, h3, p, label, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    background-color: #4caf4f00;
+    color: rgb(114, 7, 7);
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgb(105, 212, 139);
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    input {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blue Button Style */
+.blue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(251, 251, 251);
+    color:rgba(140, 4, 152, 0.726);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    #container {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+        align-items: stretch; /* Stretch items to fill the container width */
+    }
+
+    #Main2 {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+    }
+
+    .A {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
